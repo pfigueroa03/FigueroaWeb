@@ -64,6 +64,10 @@
     background-color: #333;
 }
 
+#linear-grad{
+    background-image: linear-gradient(#333, rgb(151, 50, 50));
+}
+
 .mainImg img{
     width: auto;
     height: 54px;
@@ -395,7 +399,7 @@ footer p{
     font-size: xx-large;
     font-family: 'Cherry Swash', cursive;
     font-style: italic;
-    margin: 15px;
+    margin: 5px 0 15px 0;
     text-align: center;
 }
 
@@ -411,6 +415,22 @@ footer p{
     padding: 7px;
     margin: 5 5 0 5;
     height: 264px;
+}
+
+.games_page img:hover{
+    animation-duration: 2s;
+    animation-name: bigsmall;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+}
+
+@keyframes bigsmall {
+    from {
+        transform: scale(1, 1);
+    }
+    to {
+        transform: scale(1.1, 1.1);
+    }
 }
 
 .PlayXbox{

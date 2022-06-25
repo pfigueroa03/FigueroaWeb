@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="../assets/img/games.ico">
+    <link rel="stylesheet" href="../assets/css/styles.css">
+    <title>Games Collection</title>
+</head>
+<body>
+    <header>
+        <section class="navBar">
+            <div class="mainImg">
+                <a href="../index.html"><img src="../assets/img/logo.jpg" alt="Main menu"></a>
+            </div>
+            <nav class="mainNav">
+                <ul>
+                    <li><a href="../index.html">Pagina principal</a></li>
+                    <li><a href="games.html">Juegos</a></li>
+                    <div class="dropdown">
+                        <button class="drop-father"><a href="sony.html">Sony</a></button>
+                        <div class="dropdown-content">
+                            <a href="../pages/sony.html#novedades_play">Novedades</a>
+                            <a href="../pages/sony.html#consolas_play">Consolas</a>
+                        </div>
+                    </div>
+                    <div class="dropdown">
+                        <button class="drop-father"><a href="microsoft.html">Microsoft</a></button>
+                        <div class="dropdown-content">
+                            <a href="../pages/microsoft.html#novedades_xbox">Novedades</a>
+                            <a href="../pages/microsoft.html#consolas_xbox">Consolas</a>
+                        </div>
+                    </div>
+                    <li><a href="contact.html">Contacto</a></li>
+                </ul>
+            </nav>
+        </section>
+    </header>
+    <main>
+        <div class="game_title">Encontra tu proxima historia</div>
+        <section id="games_view">
+            <section class="filter_panel">
+                <form>
+                    <fieldset>
+                        <legend><i>Filtro</i></legend>
+                        <fieldset>
+                            <legend><i>Genero</i></legend>
+                            <div class="genre_filter filter">
+                                <div class="filter">Accion<input type="checkbox" name="accion" value="1" /> </div> 
+                                <div class="filter">Aventura<input type="checkbox" name="aventura" value="1" /> </div> 
+                                <div class="filter">Arcade<input type="checkbox" name="arcade" value="1" /> </div> 
+                                <div class="filter">Indie<input type="checkbox" name="indie" value="1" /> </div> 
+                                <div class="filter">RPG<input type="checkbox" name="rpg" value="1" /> </div> 
+                            </div>
+                        </fieldset>
+                        <fieldset>
+                            <legend><i>Empresa</i></legend>
+                            <div class="console_filter filter">
+                                <div class="filter">Sony<input type="checkbox" name="sony_filter" value="1" /> </div> 
+                                <div class="filter">Microsoft<input type="checkbox" name="microsoft_filter" value="1" /> </div> 
+                            </div>
+                        </fieldset>
+                        <fieldset>
+                            <legend><i>Precio</i></legend>
+                            <div class="console_filter filter">
+                                <div class="filter"><input type="range" min="0" max="1000" step="10"></div>
+                                <input type="radio" value="price_low" name="price_range">
+                                <label for="price_low">$0 - $15</label><br>
+                                <input type="radio" value="price_medium" name="price_range">
+                                <label for="price_medium">$15-$35</label><br>
+                                <input type="radio" value="price_high" name="price_range">
+                                <label for="price_high">35$ ></label><br>
+                            </div>
+                        </fieldset>
+                        <fieldset>
+                            <legend><i>Estado</i></legend>
+                            <div class="console_filter filter">
+                                <input type="radio" value="released" name="release_status">
+                                <label for="released">Publicado</label><br>
+                                <input type="radio" value="on_develop" name="release_status">
+                                <label for="on_develop">En desarrollo</label><br>
+                            </div>
+                        </fieldset>
+                    </fieldset>
+                </form>
+            </section>
+            <section class="games_page">
+                <div>
+                    <img src="/assets/img/slider/eldenring.png" alt="Elden Ring" class="games_image PlayXbox" width="250" height="auto">
+                    <p>Elden Ring</p>
+                </div>
+                <div>
+                    <img src="/assets/img/slider/fc6.png" alt="Far Cry 6" class="games_image PlayXbox" width="250" height="auto">
+                    <p>Far Cry 6</p>
+                </div>
+                <div>
+                    <img src="/assets/img/slider/Forza-Horizon-5-PiviGames.jpg" alt="Forza Horizon 5" class="games_image xbox_game" width="250" height="auto">
+                    <p>Forza Horizon 5</p>
+                </div>
+                <div>
+                    <img src="/assets/img/slider/re8.png" alt="Resident Evil 8" class="games_image PlayXbox" width="250" height="auto">
+                    <p>Resident Village</p>
+                </div>
+                <div>
+                    <img src="/assets/img/slider/tombrider.jpg" alt="Tomb Rider" class="games_image PlayXbox" width="250" height="auto">
+                    <p>Tomb Rider</p>
+                </div>
+                <div>
+                    <img src="/assets/img/slider/bloodborne.jpeg" alt="Bloodborne" class="games_image play_game" width="250" height="auto">
+                    <p>Bloodborne</p>
+                </div>
+                <div>
+                    <img src="/assets/img/slider/liesofp.jpg" alt="Lies of P" class="games_image PlayXbox" width="250" height="auto">
+                    <p>Lies of P</p>
+                </div>
+                <div>
+                    <img src="/assets/img/slider/FFXVI.jpg" alt="FFXVI" class="games_image play_game" width="250" height="auto">
+                    <p>Final Fantasy XVI</p>
+                </div>
+            </section>
+        </section>
+    </main>
+    <footer>
+        <hr>
+        <p>Encontranos en:</p>
+        <a href="https://www.linkedin.com">Linkedin</a>
+        <a href="https://www.instagram.com">Instagram</a>
+        <div class="copy"> &copy; 2022 Pablo</div>
+    </footer>
+</body>
+</html>
+

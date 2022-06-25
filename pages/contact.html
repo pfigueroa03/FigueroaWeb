@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="../assets/img/contact.png">
+    <link rel="stylesheet" href="../assets/css/styles.css">
+    <title>Contacto</title>
+</head>
+<body>
+    <header>
+        <section class="navBar">
+            <div class="mainImg">
+                <a href="../index.html"><img src="../assets/img/logo.jpg" alt="Main menu"></a>
+            </div>
+            <nav class="mainNav">
+                <ul>
+                    <li><a href="../index.html">Pagina principal</a></li>
+                    <li><a href="games.html">Juegos</a></li>
+                    <div class="dropdown">
+                        <button class="drop-father"><a href="sony.html">Sony</a></button>
+                        <div class="dropdown-content">
+                            <a href="../pages/sony.html#novedades_play">Novedades</a>
+                            <a href="../pages/sony.html#consolas_play">Consolas</a>
+                        </div>
+                    </div>
+                    <div class="dropdown">
+                        <button class="drop-father"><a href="microsoft.html">Microsoft</a></button>
+                        <div class="dropdown-content">
+                            <a href="../pages/microsoft.html#novedades_xbox">Novedades</a>
+                            <a href="../pages/microsoft.html#consolas_xbox">Consolas</a>
+                        </div>
+                    </div>
+                    <li><a href="contact.html">Contacto</a></li>
+                </ul>
+            </nav>
+        </section>
+    </header>
+    <main>
+        <h3>Formulario de Contacto</h3>
+        <p>Complete con la informacion solicitada y nos contactaremos a la brevedad</p>
+        <form action="" method="GET" enctype="application/x-www-form-urlencoded">
+            <fieldset>
+                <legend>Formulario</legend>
+                <fieldset>
+                    <legend><i>Informacion personal</i></legend>
+                    <label for="nombre">Nombre</label><br>
+                    <input type="text" id="nombre" name="nombre"><br>
+                    <label for="apellido">Apellido</label><br>
+                    <input type="text" id="apellido" name="apellido"><br>
+                </fieldset>
+
+                <fieldset>
+                    <legend><i>Categoria de contacto</i></legend>
+                    <input type="radio" id="sony" value="sony" name="contact_opt">
+                    <label for="sony">Sony</label><br>
+                    <input type="radio" id="microsft" value="microsft" name="contact_opt">
+                    <label for="microsft">Microsft</label><br>
+                    <input type="radio" id="otra_categoria" value="otra_categoria" name="contact_opt">
+                    <label for="otra_categoria">Otro</label><br>
+                </fieldset>
+
+                <fieldset>
+                    <legend><i>Motivo de contacto</i></legend>
+                    <select name="motivo" id="motivo">
+                        <option value="juego">Juego</option>
+                        <option value="consola">Consola</option>
+                        <option value="novedad">Novedades</option>
+                        <option value="otro_motivo">Otros</option>
+                    </select>
+                </fieldset>
+
+                <fieldset>
+                    <legend><i>Informacion adicional</i></legend>
+                    <textarea name="info_adicional" id="info_adicional" cols="30" rows="10">Ingrese informacion adicional relacionada a su consulta
+                    </textarea>
+                </fieldset>
+
+                <input type="submit" value="enviar">
+                <input type="reset" value="reiniciar">
+            </fieldset>
+        </form>
+    </main>
+    <footer>
+        <hr>
+        <p>Encontranos en:</p>
+        <a href="https://www.linkedin.com">Linkedin</a>
+        <a href="https://www.instagram.com">Instagram</a>
+        <div class="copy"> &copy; 2022 Pablo</div>
+    </footer>
+</body>
+
+</html>

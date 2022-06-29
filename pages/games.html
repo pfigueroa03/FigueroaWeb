@@ -5,129 +5,227 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="shortcut icon" href="../assets/img/games.ico">
-    <link rel="stylesheet" href="../assets/css/styles.css">
+    <link rel="stylesheet" href="../assets/css/bootstrap.min.css">
+    <script src="../assets/js/jquery.slim.min.js"></script>
+    <script src="../assets/js/bootstrap.bundle.min.js"></script>
+    
+    <!--<link rel="stylesheet" href="../assets/css/styles.css">-->
     <title>Games Collection</title>
 </head>
 <body>
     <header>
-        <section class="navBar">
-            <div class="mainImg">
-                <a href="../index.html"><img src="../assets/img/logo.jpg" alt="Main menu"></a>
+        <div class="container-fluid bg-dark">
+            <div class="row">
+                <div class="col-1">
+                    
+                </div>
+                <div class="col-11">
+                    <ul class="nav nav-pills d-flex justify-content-end">
+                        <li class="nav-item">
+                        <a class="nav-link" href="../index.html">Pagina Principal</a>
+                        </li>
+                        <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" data-toggle="dropdown" href="../pages/sony.html" role="button" aria-haspopup="true" aria-expanded="false">Sony</a>
+                        <div class="dropdown-menu">
+                            <a class="dropdown-item" href="../pages/sony.html">Principal</a>
+                            <a class="dropdown-item" href="../pages/sony.html#novedades_play">Novedades</a>
+                            <a class="dropdown-item" href="../pages/sony.html#consolas_play">Consolas</a>
+                        </div>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" data-toggle="dropdown" href="microsoft.html" role="button" aria-haspopup="true" aria-expanded="false">Microsoft</a>
+                            <div class="dropdown-menu">
+                                <a class="dropdown-item" href="../pages/microsoft.html">Principal</a>
+                                <a class="dropdown-item" href="#!">Novedades</a>
+                                <a class="dropdown-item" href="#!">Consolas</a>
+                            </div>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="games.html">Juegos</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#!">Contacto</a>
+                        </li>
+                    </ul>
+                </div>
             </div>
-            <nav class="mainNav">
-                <ul>
-                    <li><a href="../index.html">Pagina principal</a></li>
-                    <li><a href="games.html">Juegos</a></li>
-                    <div class="dropdown">
-                        <button class="drop-father"><a href="sony.html">Sony</a></button>
-                        <div class="dropdown-content">
-                            <a href="../pages/sony.html#novedades_play">Novedades</a>
-                            <a href="../pages/sony.html#consolas_play">Consolas</a>
-                        </div>
-                    </div>
-                    <div class="dropdown">
-                        <button class="drop-father"><a href="microsoft.html">Microsoft</a></button>
-                        <div class="dropdown-content">
-                            <a href="../pages/microsoft.html#novedades_xbox">Novedades</a>
-                            <a href="../pages/microsoft.html#consolas_xbox">Consolas</a>
-                        </div>
-                    </div>
-                    <li><a href="contact.html">Contacto</a></li>
-                </ul>
-            </nav>
-        </section>
+        </div>
     </header>
     <main>
         <div class="game_title" id="linear-grad">Encontra tu proxima historia</div>
-        <section id="games_view">
-            <section class="filter_panel">
-                <form>
-                    <fieldset>
-                        <legend><i>Filtro</i></legend>
-                        <fieldset>
-                            <legend><i>Genero</i></legend>
-                            <div class="genre_filter filter">
-                                <div class="filter">Accion<input type="checkbox" name="accion" value="1" /> </div> 
-                                <div class="filter">Aventura<input type="checkbox" name="aventura" value="1" /> </div> 
-                                <div class="filter">Arcade<input type="checkbox" name="arcade" value="1" /> </div> 
-                                <div class="filter">Indie<input type="checkbox" name="indie" value="1" /> </div> 
-                                <div class="filter">RPG<input type="checkbox" name="rpg" value="1" /> </div> 
+        <div class="container-fluid">
+            <div class="row">
+                <div class="col-5 col-md-3 col-xl-2">
+                    <div id="accordion" role="tablist">
+                        <div class="card">
+                            <div class="card-header" role="tab" id="headingOne">
+                                <h5 class="mb-0">
+                                    <a data-toggle="collapse" href="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                                    Filtro
+                                    </a>
+                                </h5>
                             </div>
-                        </fieldset>
-                        <fieldset>
-                            <legend><i>Empresa</i></legend>
-                            <div class="console_filter filter">
-                                <div class="filter">Sony<input type="checkbox" name="sony_filter" value="1" /> </div> 
-                                <div class="filter">Microsoft<input type="checkbox" name="microsoft_filter" value="1" /> </div> 
+                      
+                            <div id="collapseOne" class="collapse show" role="tabpanel" aria-labelledby="headingOne">
+                                <div class="card-body">
+                                    <div class="card">
+                                        <div class="card-header" role="tab" id="headingTwo">
+                                            <h5 class="mb-0">
+                                                <a class="collapsed" data-toggle="collapse" href="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                                                Genero
+                                                </a>
+                                            </h5>
+                                        </div>
+                                        <div id="collapseTwo" class="collapse" role="tabpanel" aria-labelledby="headingTwo">
+                                            <div class="card-body">
+                                                <div class="custom-control custom-checkbox">
+                                                    <input type="checkbox" class="custom-control-input" id="customCheck1">
+                                                    <label class="custom-control-label" for="customCheck1">Accion</label>
+                                                </div>
+                                                <div class="custom-control custom-checkbox">
+                                                    <input type="checkbox" class="custom-control-input" id="customCheck2">
+                                                    <label class="custom-control-label" for="customCheck2">Aventura</label>
+                                                </div>
+                                                <div class="custom-control custom-checkbox">
+                                                    <input type="checkbox" class="custom-control-input" id="customCheck3">
+                                                    <label class="custom-control-label" for="customCheck3">Arcade</label>
+                                                </div>
+                                                <div class="custom-control custom-checkbox">
+                                                    <input type="checkbox" class="custom-control-input" id="customCheck4">
+                                                    <label class="custom-control-label" for="customCheck4">Indie</label>
+                                                </div>
+                                                <div class="custom-control custom-checkbox">
+                                                    <input type="checkbox" class="custom-control-input" id="customCheck5">
+                                                    <label class="custom-control-label" for="customCheck5">RPG</label>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="card-header" role="tab" id="headingThree">
+                                            <h5 class="mb-0">
+                                                <a class="collapsed" data-toggle="collapse" href="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                                                Empresa
+                                                </a>
+                                            </h5>
+                                        </div>
+                                        <div id="collapseThree" class="collapse" role="tabpanel" aria-labelledby="headingThree">
+                                            <div class="card-body">
+                                                <div class="custom-control custom-checkbox">
+                                                    <input type="checkbox" class="custom-control-input" id="customCheck6">
+                                                    <label class="custom-control-label" for="customCheck6">Sony</label>
+                                                </div>
+                                                <div class="custom-control custom-checkbox">
+                                                    <input type="checkbox" class="custom-control-input" id="customCheck7">
+                                                    <label class="custom-control-label" for="customCheck7">Microsoft</label>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="card-header" role="tab" id="headingFour">
+                                            <h5 class="mb-0">
+                                                <a class="collapsed" data-toggle="collapse" href="#collapseFour" aria-expanded="false" aria-controls="collapseFour">
+                                                Precio
+                                                </a>
+                                            </h5>
+                                        </div>
+                                        <div id="collapseFour" class="collapse" role="tabpanel" aria-labelledby="headingFour">
+                                            <div class="card-body">
+                                                <div class="console_filter filter">
+                                                    <label for="customRange1">Basic range</label>
+                                                    <input type="range" class="custom-range" id="customRange1">
+                                                    <div class="custom-control custom-radio">
+                                                        <input type="radio" id="customRadio1" name="customRadio" class="custom-control-input">
+                                                        <label class="custom-control-label" for="customRadio1">$0 - $15</label>
+                                                    </div>
+                                                    <div class="custom-control custom-radio">
+                                                        <input type="radio" id="customRadio2" name="customRadio" class="custom-control-input">
+                                                        <label class="custom-control-label" for="customRadio2">$15-$35</label>
+                                                    </div>
+                                                    <div class="custom-control custom-radio">
+                                                        <input type="radio" id="customRadio3" name="customRadio" class="custom-control-input">
+                                                        <label class="custom-control-label" for="customRadio3">35$ ></label>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="card-header" role="tab" id="headingFive">
+                                            <h5 class="mb-0">
+                                                <a class="collapsed" data-toggle="collapse" href="#collapseFive" aria-expanded="false" aria-controls="collapseFive">
+                                                Estado
+                                                </a>
+                                            </h5>
+                                        </div>
+                                        <div id="collapseFive" class="collapse" role="tabpanel" aria-labelledby="headingFive">
+                                            <div class="card-body">
+                                                <div class="custom-control custom-radio">
+                                                    <input type="radio" id="statecustomRadio1" name="customRadioState" class="custom-control-input">
+                                                    <label class="custom-control-label" for="statecustomRadio1">Publicado</label>
+                                                </div>
+                                                <div class="custom-control custom-radio">
+                                                    <input type="radio" id="statecustomRadio2" name="customRadioState" class="custom-control-input">
+                                                    <label class="custom-control-label" for="statecustomRadio2">No publicado</label>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <button type="button" class="btn btn-primary p-1">Aplicar</button>
                             </div>
-                        </fieldset>
-                        <fieldset>
-                            <legend><i>Precio</i></legend>
-                            <div class="console_filter filter">
-                                <div class="filter"><input type="range" min="0" max="1000" step="10"></div>
-                                <input type="radio" value="price_low" name="price_range">
-                                <label for="price_low">$0 - $15</label><br>
-                                <input type="radio" value="price_medium" name="price_range">
-                                <label for="price_medium">$15-$35</label><br>
-                                <input type="radio" value="price_high" name="price_range">
-                                <label for="price_high">35$ ></label><br>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-7 col-md-9 col-xl-10">
+                    <div class="container">
+                        <div class="row">
+                            <div class="col-12 col-md-6 col-lg-4 col-xl-3">
+                                <img src="/assets/img/slider/eldenring.png" alt="Elden Ring" class="img-thumbnail games_image PlayXbox" width="250" height="auto">
+                                <p>Elden Ring</p>
                             </div>
-                        </fieldset>
-                        <fieldset>
-                            <legend><i>Estado</i></legend>
-                            <div class="console_filter filter">
-                                <input type="radio" value="released" name="release_status">
-                                <label for="released">Publicado</label><br>
-                                <input type="radio" value="on_develop" name="release_status">
-                                <label for="on_develop">En desarrollo</label><br>
+                            <div class="col-12 col-md-6 col-lg-4 col-xl-3">
+                                <img src="/assets/img/slider/fc6.png" alt="Far Cry 6" class="img-thumbnail games_image PlayXbox" width="250" height="auto">
+                                <p>Far Cry 6</p>
                             </div>
-                        </fieldset>
-                    </fieldset>
-                </form>
-            </section>
-            <section class="games_page">
-                <div>
-                    <img src="/assets/img/slider/eldenring.png" alt="Elden Ring" class="games_image PlayXbox" width="250" height="auto">
-                    <p>Elden Ring</p>
+                            <div class="col-12 col-md-6 col-lg-4 col-xl-3">
+                                <img src="/assets/img/slider/Forza-Horizon-5-PiviGames.jpg" alt="Forza Horizon 5" class="img-thumbnail games_image xbox_game" width="250" height="auto">
+                                <p>Forza Horizon 5</p>
+                            </div>
+                            <div class="col-12 col-md-6 col-lg-4 col-xl-3">
+                                <img src="/assets/img/slider/re8.png" alt="Resident Evil 8" class="img-thumbnail games_image PlayXbox" width="250" height="auto">
+                                <p>Resident Village</p>
+                            </div>
+                            <div class="col-12 col-md-6 col-lg-4 col-xl-3">
+                                <img src="/assets/img/slider/tombrider.jpg" alt="Tomb Rider" class="img-thumbnail games_image PlayXbox" width="250" height="auto">
+                                <p>Tomb Rider</p>
+                            </div>
+                            <div class="col-12 col-md-6 col-lg-4 col-xl-3">
+                                <img src="/assets/img/slider/bloodborne.jpeg" alt="Bloodborne" class="img-thumbnail games_image play_game" width="250" height="auto">
+                                <p>Bloodborne</p>
+                            </div>
+                            <div class="col-12 col-md-6 col-lg-4 col-xl-3">
+                                <img src="/assets/img/slider/liesofp.jpg" alt="Lies of P" class="img-thumbnail games_image PlayXbox" width="250" height="auto">
+                                <p>Lies of P</p>
+                            </div>
+                            <div class="col-12 col-md-6 col-lg-4 col-xl-3">
+                                <img src="/assets/img/slider/FFXVI.jpg" alt="FFXVI" class="img-thumbnail games_image play_game" width="250" height="auto">
+                                <p>Final Fantasy XVI</p>
+                            </div>
+                        </div>
+                    </div>
                 </div>
-                <div>
-                    <img src="/assets/img/slider/fc6.png" alt="Far Cry 6" class="games_image PlayXbox" width="250" height="auto">
-                    <p>Far Cry 6</p>
-                </div>
-                <div>
-                    <img src="/assets/img/slider/Forza-Horizon-5-PiviGames.jpg" alt="Forza Horizon 5" class="games_image xbox_game" width="250" height="auto">
-                    <p>Forza Horizon 5</p>
-                </div>
-                <div>
-                    <img src="/assets/img/slider/re8.png" alt="Resident Evil 8" class="games_image PlayXbox" width="250" height="auto">
-                    <p>Resident Village</p>
-                </div>
-                <div>
-                    <img src="/assets/img/slider/tombrider.jpg" alt="Tomb Rider" class="games_image PlayXbox" width="250" height="auto">
-                    <p>Tomb Rider</p>
-                </div>
-                <div>
-                    <img src="/assets/img/slider/bloodborne.jpeg" alt="Bloodborne" class="games_image play_game" width="250" height="auto">
-                    <p>Bloodborne</p>
-                </div>
-                <div>
-                    <img src="/assets/img/slider/liesofp.jpg" alt="Lies of P" class="games_image PlayXbox" width="250" height="auto">
-                    <p>Lies of P</p>
-                </div>
-                <div>
-                    <img src="/assets/img/slider/FFXVI.jpg" alt="FFXVI" class="games_image play_game" width="250" height="auto">
-                    <p>Final Fantasy XVI</p>
-                </div>
-            </section>
-        </section>
+            </div>
+        </div>
     </main>
     <footer>
-        <hr>
-        <p>Encontranos en:</p>
-        <a href="https://www.linkedin.com">Linkedin</a>
-        <a href="https://www.instagram.com">Instagram</a>
-        <div class="copy"> &copy; 2022 Pablo</div>
+        <div class="container-fluid d-flex bg-dark text-white">
+            <div class="col-10 m-1">
+                <div class="d-inline-block">
+                    <p class="d-md-inline-block">Encontranos en:</p>
+                    <a href="https://www.linkedin.com">Linkedin</a>
+                    <a href="https://www.instagram.com">Instagram</a>
+                </div>
+            </div>
+            <div class="col-2">
+               <p class="text-right"> &copy; 2022 Pablo </p>
+            </div>
+        </div>
     </footer>
 </body>
 </html>
-

@@ -1,115 +1,164 @@
 <!DOCTYPE html>
-<html lang="es">
+<html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="shortcut icon" href="../assets/img/sonyfavicon.png">
-    <link rel="stylesheet" href="../assets/css/styles.css">
-    <title>Sony</title>
+    <link rel="stylesheet" href="../assets/css/bootstrap.min.css">
+    <script src="../assets/js/jquery.slim.min.js"></script>
+    <script src="../assets/js/bootstrap.bundle.min.js"></script>
+    
+    <!--<link rel="stylesheet" href="../assets/css/styles.css">-->
+    
+    <title>Sony Bootstrap</title>
 </head>
 <body>
     <header>
-        <section class="navBar">
-            <div class="mainImg">
-                <a href="../index.html"><img src="../assets/img/logo.jpg" alt="Main menu"></a>
+        <div class="container-fluid bg-dark">
+            <div class="row">
+                <div class="col-1">
+                    
+                </div>
+                <div class="col-11">
+                    <ul class="nav nav-pills d-flex justify-content-end">
+                        <li class="nav-item">
+                        <a class="nav-link" href="../index.html">Pagina Principal</a>
+                        </li>
+                        <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" data-toggle="dropdown" href="../pages/sony.html" role="button" aria-haspopup="true" aria-expanded="false">Sony</a>
+                        <div class="dropdown-menu">
+                            <a class="dropdown-item" href="../pages/sony.html">Principal</a>
+                            <a class="dropdown-item" href="../pages/sony.html#novedades_play">Novedades</a>
+                            <a class="dropdown-item" href="../pages/sony.html#consolas_play">Consolas</a>
+                        </div>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" data-toggle="dropdown" href="microsoft.html" role="button" aria-haspopup="true" aria-expanded="false">Microsoft</a>
+                            <div class="dropdown-menu">
+                                <a class="dropdown-item" href="../pages/microsoft.html">Principal</a>
+                                <a class="dropdown-item" href="#!">Novedades</a>
+                                <a class="dropdown-item" href="#!">Consolas</a>
+                            </div>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="games.html">Juegos</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#!">Contacto</a>
+                        </li>
+                    </ul>
+                </div>
             </div>
-            <nav class="mainNav">
-                <ul>
-                    <li><a href="../index.html">Pagina principal</a></li>
-                    <li><a href="games.html">Juegos</a></li>
-                    <div class="dropdown">
-                        <button class="drop-father"><a href="sony.html">Sony</a></button>
-                        <div class="dropdown-content">
-                            <a href="../pages/sony.html#novedades_play">Novedades</a>
-                            <a href="../pages/sony.html#consolas_play">Consolas</a>
-                        </div>
-                    </div>
-                    <div class="dropdown">
-                        <button class="drop-father"><a href="microsoft.html">Microsoft</a></button>
-                        <div class="dropdown-content">
-                            <a href="../pages/microsoft.html#novedades_xbox">Novedades</a>
-                            <a href="../pages/microsoft.html#consolas_xbox">Consolas</a>
-                        </div>
-                    </div>
-                    <li><a href="contact.html">Contacto</a></li>
-                </ul>
-            </nav>
-        </section>
+        </div>
     </header>
-    <main id="playstation">
-        <div class="main_title"></div>
-        <h2 class="playstation__title">Bienvenido al futuro de los viedojuegos</h2>
-        <section class="psintro">
-            <video autoplay muted loop class="mainVideo">
-                <source src="/assets/videos/psbackground.mp4" type="video/mp4">
-            </video>
-            <p class="playstation__intro">
-                Potencia, capacidad y diseño son algunos de los conceptos que trae la Sony PlayStation 5. 
-                Con ella, vas a poder jugar toda una nueva generación de juegos más dinámicos y exigentes. 
-                Sumergite en una experiencia unica, su control inalámbrico DualSense permite una experiencia de juego más intensa e inmersiva. 
-                El innovador control de PS5 cuenta con respuesta háptica y efectos de gatillo dinámicos. 
-                Además, incluye un micrófono integrado y el nuevo botón crear, todo en un diseño cómodo e icónico.
-            </p>
-        </section>
-        </section>
-        <h2>Novedades</h2>
-        <section class="news" id="novedades_play">
-            <div class="playSix">
-                <h4>Play Station Seis</h4>
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. 
-                Libero volutpat sed cras ornare. Dui vivamus arcu felis bibendum ut tristique et egestas. Nunc non blandit massa enim nec.                     Convallis convallis tellus id interdum velit. Arcu non odio euismod lacinia at quis risus sed. Aliquam eleifend mi in nulla posuere sollicitudin aliquam ultrices sagittis. 
-                Suscipit tellus mauris a diam maecenas sed enim ut sem. Elementum nibh tellus molestie nunc non blandit massa. Magnis dis parturient montes nascetur ridiculus mus mauris. 
-                Magna fringilla urna porttitor rhoncus dolor purus non enim. Eget duis at tellus at urna condimentum mattis pellentesque. Sapien nec sagittis aliquam malesuada bibendum arcu vitae elementum. 
-                Turpis tincidunt id aliquet risus feugiat in ante. Cursus sit amet dictum sit amet justo. Nibh cras pulvinar mattis nunc sed blandit. Cursus turpis massa tincidunt dui ut ornare lectus sit.
+    <main>
+        <div class="play_img_title">ACA VA LA IMAGEN DE SONY</div>
+        <h2 class="">Bienvenido al futuro de los viedojuegos</h2>
+        <div class="container-fluid d-flex bg-dark text-white play_intro">
+            <div class="row align-items-center">
+            <div class="col-5">
+                <video autoplay muted loop class="mainVideo">
+                    <source src="/assets/videos/psbackground.mp4" type="video/mp4">
+                </video>
             </div>
-            <div class="psNowFuture">
-                <h4>Futuro de PS Now</h4>
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. 
-                Libero volutpat sed cras ornare. Dui vivamus arcu felis bibendum ut tristique et egestas. Nunc non blandit massa enim nec. 
-                Convallis convallis tellus id interdum velit. Arcu non odio euismod lacinia at quis risus sed. Aliquam eleifend mi in nulla posuere sollicitudin aliquam ultrices sagittis. 
-                Suscipit tellus mauris a diam maecenas sed enim ut sem. Elementum nibh tellus molestie nunc non blandit massa. Magnis dis parturient montes nascetur ridiculus mus mauris.                     Magna fringilla urna porttitor rhoncus dolor purus non enim. Eget duis at tellus at urna condimentum mattis pellentesque. Sapien nec sagittis aliquam malesuada bibendum arcu vitae elementum. 
-                Turpis tincidunt id aliquet risus feugiat in ante. Cursus sit amet dictum sit amet justo. Nibh cras pulvinar mattis nunc sed blandit. Cursus turpis massa tincidunt dui ut ornare lectus sit.
+            <div class="col-7">
+                <p class="align-items-center p-2">
+                    Potencia, capacidad y diseño son algunos de los conceptos que trae la Sony PlayStation 5. 
+                    Con ella, vas a poder jugar toda una nueva generación de juegos más dinámicos y exigentes. 
+                    Sumergite en una experiencia unica, su control inalámbrico DualSense permite una experiencia de juego más intensa e inmersiva. 
+                    El innovador control de PS5 cuenta con respuesta háptica y efectos de gatillo dinámicos. 
+                    Además, incluye un micrófono integrado y el nuevo botón crear, todo en un diseño cómodo e icónico.
+                </p>
             </div>
-        </section>
+            </div>
+        </div>
 
-        <section class="consolas psMedia" id="consolas_play">
-            <h2>Consolas</h2>
+        <div class="container">
+            <div class="row">
+                <h2 class="font-weight-bold" id="novedades_play">Novedades</h2>
+            </div>
+        </div>
 
-            <h4>Play Station 5</h4>
+        <div class="container-fluid">
+            <div class="row font-italic">
+                <div class="col-6 bg-info text-white">
+                    <h4>Play Station Seis</h4>
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. 
+                    Libero volutpat sed cras ornare. Dui vivamus arcu felis bibendum ut tristique et egestas. Nunc non blandit massa enim nec.                     Convallis convallis tellus id interdum velit. Arcu non odio euismod lacinia at quis risus sed. Aliquam eleifend mi in nulla posuere sollicitudin aliquam ultrices sagittis. 
+                    Suscipit tellus mauris a diam maecenas sed enim ut sem. Elementum nibh tellus molestie nunc non blandit massa. Magnis dis parturient montes nascetur ridiculus mus mauris. 
+                    Magna fringilla urna porttitor rhoncus dolor purus non enim. Eget duis at tellus at urna condimentum mattis pellentesque. Sapien nec sagittis aliquam malesuada bibendum arcu vitae elementum. 
+                    Turpis tincidunt id aliquet risus feugiat in ante. Cursus sit amet dictum sit amet justo. Nibh cras pulvinar mattis nunc sed blandit. Cursus turpis massa tincidunt dui ut ornare lectus sit.
+                </div>
+
+                <div class="col-6">
+                    <h4>Futuro de PS Now</h4>
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. 
+                    Libero volutpat sed cras ornare. Dui vivamus arcu felis bibendum ut tristique et egestas. Nunc non blandit massa enim nec. 
+                    Convallis convallis tellus id interdum velit. Arcu non odio euismod lacinia at quis risus sed. Aliquam eleifend mi in nulla posuere sollicitudin aliquam ultrices sagittis. 
+                    Suscipit tellus mauris a diam maecenas sed enim ut sem. Elementum nibh tellus molestie nunc non blandit massa. Magnis dis parturient montes nascetur ridiculus mus mauris.                     Magna fringilla urna porttitor rhoncus dolor purus non enim. Eget duis at tellus at urna condimentum mattis pellentesque. Sapien nec sagittis aliquam malesuada bibendum arcu vitae elementum. 
+                    Turpis tincidunt id aliquet risus feugiat in ante. Cursus sit amet dictum sit amet justo. Nibh cras pulvinar mattis nunc sed blandit. Cursus turpis massa tincidunt dui ut ornare lectus sit.
+                </div>
+            </div>
+        </div>  
+
+        <h2 id="consolas_play">Consolas</h2>
+
+        <h4>Play Station 5</h4>
             
-            <img src="/assets/img/contenido/consola-ps5-playstation-5-2497497.png" alt="ps5">
-            <iframe width="300" height="150" src="https://www.youtube.com/embed/RkC0l4iekYo" 
-            title="YouTube video player" frameborder="0" 
-            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
-            allowfullscreen>
-            </iframe>
-            
-            <h4>Play Station 4</h4>
-            <section class="playcuatro">
-                <div class="pro">
-                    <h5 class="proversion">Version Pro</h5>
-                    <img src="/assets/img/contenido/PlayStation-4-Pro.jpg" alt="ps4-pro">
+        <div class="container-fluid">
+                <div class="row">
+                    <div class="col-3">
+                        <img src="/assets/img/contenido/consola-ps5-playstation-5-2497497.png" class="img-fluid rounded-lg" alt="ps5">
+                    </div>
+                        
+                    <div class="col-3">
+                        <iframe class="img-fluid" src="https://www.youtube.com/embed/RkC0l4iekYo" 
+                        title="YouTube video player" frameborder="0" 
+                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
+                        allowfullscreen>
+                        </iframe>
+                    </div>
                 </div>
-                <div class="ps4slime">
-                    <h5 class="normalversion">Play Station 4 Slim</h5>
-                    <img src="/assets/img/contenido/ps4.jpg" alt="ps4 slim">
+        </div>
+
+        <h4 class="font-italic font-weight-bolder m-2">Play Station 4</h4>
+        <div class="container">
+                <div class="row p-3">
+                    <div class="col-4">
+                        <h5 class="proversion">Version Pro</h5>
+                        <img src="/assets/img/contenido/PlayStation-4-Pro.jpg" class="img-fluid" alt="ps4-pro">
+                    </div>
+                        
+                    <div class="col-4">
+                        <h5 class="normalversion">Play Station 4 Slim</h5>
+                        <img src="/assets/img/contenido/ps4.jpg" class="img-fluid" alt="ps4 slim">
+                    </div>
+
+                    <div class="col-4">
+                        <h5 class="fatVersion">Play Station 4</h5>
+                        <img src="/assets/img/contenido/ps4fat.jpg" class="img-fluid" alt="ps4 fat">
+                    </div>
                 </div>
-                <div class="ps4fat">
-                    <h5 class="fatVersion">Play Station 4</h5>
-                    <img src="/assets/img/contenido/ps4fat.jpg" alt="ps4 fat">
+                <div class="d-flex justify-content-center">
+                    <img src="/assets/img/contenido/ps4comparison.JPG" alt="comparacion"> 
                 </div>
-            </section> 
-            <img src="/assets/img/contenido/ps4comparison.JPG" alt="comparacion" id="ps4_compare"> 
-              
-        </section>
+                
+        </div>
     </main>
     <footer>
-        <hr>
-        <p>Encontranos en:</p>
-        <a href="https://www.linkedin.com">Linkedin</a>
-        <a href="https://www.instagram.com">Instagram</a>
-        <div class="copy"> &copy; 2022 Pablo</div>
+        <div class="container-fluid d-flex bg-dark text-white">
+            <div class="col-10 m-1">
+                <div class="d-inline-block">
+                    <p class="d-md-inline-block">Encontranos en:</p>
+                    <a href="https://www.linkedin.com">Linkedin</a>
+                    <a href="https://www.instagram.com">Instagram</a>
+                </div>
+            </div>
+            <div class="col-2">
+               <p class="text-right"> &copy; 2022 Pablo </p>
+            </div>
+        </div>
     </footer>
 </body>
 </html>

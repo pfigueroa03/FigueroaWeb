@@ -9,7 +9,7 @@
     <script src="../assets/js/jquery.slim.min.js"></script>
     <script src="../assets/js/bootstrap.bundle.min.js"></script>
     
-    <!--<link rel="stylesheet" href="../assets/css/styles.css">-->
+    <link rel="stylesheet" href="../assets/css/styles.css">
     
     <title>Sony Bootstrap</title>
 </head>
@@ -20,23 +20,39 @@
                 <div class="col-1">
                     
                 </div>
-                <div class="col-11">
+                <div class="col-11 justify-content-end mobile_nav">
+                    <div class="dropdown">
+                        <button class="btn btn-secondary dropdown-toggle"
+                                type="button" id="dropdownMenu1" data-toggle="dropdown"
+                                aria-haspopup="true" aria-expanded="false">
+                          Navegador
+                        </button>
+                        <div class="dropdown-menu" aria-labelledby="dropdownMenu1">
+                          <a class="dropdown-item" href="../index.html">Principal</a>
+                          <a class="dropdown-item" href="./sony.html">Sony</a>
+                          <a class="dropdown-item" href="./microsoft.html">Microsoft</a>
+                          <a class="dropdown-item" href="./games.html">Juegos</a>
+                          <a class="dropdown-item" href="./contact.html">Contactos</a>
+                        </div>
+                      </div>
+                </div>
+                <div class="col-11 desktop_nav">
                     <ul class="nav nav-pills d-flex justify-content-end">
                         <li class="nav-item">
-                        <a class="nav-link" href="../index.html">Pagina Principal</a>
+                        <a class="nav-link" href="./index.html">Pagina Principal</a>
                         </li>
                         <li class="nav-item dropdown">
-                        <a class="nav-link dropdown-toggle" data-toggle="dropdown" href="../pages/sony.html" role="button" aria-haspopup="true" aria-expanded="false">Sony</a>
+                        <a class="nav-link dropdown-toggle" data-toggle="dropdown" href="./pages/sony.html" role="button" aria-haspopup="true" aria-expanded="false">Sony</a>
                         <div class="dropdown-menu">
-                            <a class="dropdown-item" href="../pages/sony.html">Principal</a>
-                            <a class="dropdown-item" href="../pages/sony.html#novedades_play">Novedades</a>
-                            <a class="dropdown-item" href="../pages/sony.html#consolas_play">Consolas</a>
+                            <a class="dropdown-item" href="./pages/sony.html">Principal</a>
+                            <a class="dropdown-item" href="./pages/sony.html#novedades_play">Novedades</a>
+                            <a class="dropdown-item" href="./pages/sony.html#consolas_play">Consolas</a>
                         </div>
                         </li>
                         <li class="nav-item dropdown">
                             <a class="nav-link dropdown-toggle" data-toggle="dropdown" href="microsoft.html" role="button" aria-haspopup="true" aria-expanded="false">Microsoft</a>
                             <div class="dropdown-menu">
-                                <a class="dropdown-item" href="../pages/microsoft.html">Principal</a>
+                                <a class="dropdown-item" href="./pages/microsoft.html">Principal</a>
                                 <a class="dropdown-item" href="#!">Novedades</a>
                                 <a class="dropdown-item" href="#!">Consolas</a>
                             </div>
@@ -53,17 +69,17 @@
         </div>
     </header>
     <main>
-        <div class="play_img_title">ACA VA LA IMAGEN DE SONY</div>
-        <h2 class="">Bienvenido al futuro de los viedojuegos</h2>
+        <div class="play_img_title"></div>
+        <h2 class="playstation__title">Bienvenido al futuro de los viedojuegos</h2>
         <div class="container-fluid d-flex bg-dark text-white play_intro">
             <div class="row align-items-center">
-            <div class="col-5">
+            <div class="col-12 col-md-5">
                 <video autoplay muted loop class="mainVideo">
                     <source src="/assets/videos/psbackground.mp4" type="video/mp4">
                 </video>
             </div>
-            <div class="col-7">
-                <p class="align-items-center p-2">
+            <div class="col-12 col-md-7">
+                <p class="align-items-center p-2 playstation__intro">
                     Potencia, capacidad y diseño son algunos de los conceptos que trae la Sony PlayStation 5. 
                     Con ella, vas a poder jugar toda una nueva generación de juegos más dinámicos y exigentes. 
                     Sumergite en una experiencia unica, su control inalámbrico DualSense permite una experiencia de juego más intensa e inmersiva. 
@@ -82,22 +98,29 @@
 
         <div class="container-fluid">
             <div class="row font-italic">
-                <div class="col-6 bg-info text-white">
-                    <h4>Play Station Seis</h4>
-                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. 
-                    Libero volutpat sed cras ornare. Dui vivamus arcu felis bibendum ut tristique et egestas. Nunc non blandit massa enim nec.                     Convallis convallis tellus id interdum velit. Arcu non odio euismod lacinia at quis risus sed. Aliquam eleifend mi in nulla posuere sollicitudin aliquam ultrices sagittis. 
-                    Suscipit tellus mauris a diam maecenas sed enim ut sem. Elementum nibh tellus molestie nunc non blandit massa. Magnis dis parturient montes nascetur ridiculus mus mauris. 
-                    Magna fringilla urna porttitor rhoncus dolor purus non enim. Eget duis at tellus at urna condimentum mattis pellentesque. Sapien nec sagittis aliquam malesuada bibendum arcu vitae elementum. 
-                    Turpis tincidunt id aliquet risus feugiat in ante. Cursus sit amet dictum sit amet justo. Nibh cras pulvinar mattis nunc sed blandit. Cursus turpis massa tincidunt dui ut ornare lectus sit.
+                <div class="col-12 col-md-6 bg-info text-white p-1">
+                    <h4>Play Station 5 Pro</h4>
+                    <p>
+                        Sony no es ajena a las renovaciones de consolas de media generación, 
+                        ya que lanzó la PS4 Pro unos tres años después de que la PlayStation 4 inicial llegara al mercado. 
+                        Ahora se rumorea que está planeando algo similar con la PS5.
+                        Se especula con que se está preparando una PlayStation 5 Pro, que posiblemente salga a la venta en 2023
+                        En cuanto a la fecha de lanzamiento, se ha sugerido que Sony seguirá un intervalo de lanzamiento de tres años 
+                        similar al que hizo con el modelo de PS4 Pro, 
+                        por lo que la PS5 Pro es probable para finales de 2023
+                    </p>
                 </div>
 
-                <div class="col-6">
+                <div class="col-12 col-md-6 p-1">
                     <h4>Futuro de PS Now</h4>
-                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. 
-                    Libero volutpat sed cras ornare. Dui vivamus arcu felis bibendum ut tristique et egestas. Nunc non blandit massa enim nec. 
-                    Convallis convallis tellus id interdum velit. Arcu non odio euismod lacinia at quis risus sed. Aliquam eleifend mi in nulla posuere sollicitudin aliquam ultrices sagittis. 
-                    Suscipit tellus mauris a diam maecenas sed enim ut sem. Elementum nibh tellus molestie nunc non blandit massa. Magnis dis parturient montes nascetur ridiculus mus mauris.                     Magna fringilla urna porttitor rhoncus dolor purus non enim. Eget duis at tellus at urna condimentum mattis pellentesque. Sapien nec sagittis aliquam malesuada bibendum arcu vitae elementum. 
-                    Turpis tincidunt id aliquet risus feugiat in ante. Cursus sit amet dictum sit amet justo. Nibh cras pulvinar mattis nunc sed blandit. Cursus turpis massa tincidunt dui ut ornare lectus sit.
+                    <p>
+                        Descubre tu próxima gran aventura con los nuevos catálogos de cientos de juegos actuales y clásicos, 
+                        pruebas con límite de tiempo, multijugador online, descuentos exclusivos para miembros y mucho más, 
+                        con una selección de tres nuevas opciones de membresía.
+                        Con los planes de suscripcion: Essential, Extra y Deluxe, PlayStation se adapta a los requisitos de todos los jugadores.
+                        Siendo el Essential el ya conocido Ps Now, en su version Extra y Deluxe se incorporan funcionalidades como un catalogo completo de juegos, 
+                        estreno de dia cero, pruebas anticipadas y mas
+                    </p>
                 </div>
             </div>
         </div>  
@@ -108,11 +131,11 @@
             
         <div class="container-fluid">
                 <div class="row">
-                    <div class="col-3">
+                    <div class="col-6 col-md-5">
                         <img src="/assets/img/contenido/consola-ps5-playstation-5-2497497.png" class="img-fluid rounded-lg" alt="ps5">
                     </div>
                         
-                    <div class="col-3">
+                    <div class="col-6 col-md-5">
                         <iframe class="img-fluid" src="https://www.youtube.com/embed/RkC0l4iekYo" 
                         title="YouTube video player" frameborder="0" 
                         allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
@@ -125,23 +148,23 @@
         <h4 class="font-italic font-weight-bolder m-2">Play Station 4</h4>
         <div class="container">
                 <div class="row p-3">
-                    <div class="col-4">
+                    <div class="col-12 col-md-4">
                         <h5 class="proversion">Version Pro</h5>
                         <img src="/assets/img/contenido/PlayStation-4-Pro.jpg" class="img-fluid" alt="ps4-pro">
                     </div>
                         
-                    <div class="col-4">
+                    <div class="col-12 col-md-4">
                         <h5 class="normalversion">Play Station 4 Slim</h5>
                         <img src="/assets/img/contenido/ps4.jpg" class="img-fluid" alt="ps4 slim">
                     </div>
 
-                    <div class="col-4">
+                    <div class="col-12 col-md-4">
                         <h5 class="fatVersion">Play Station 4</h5>
                         <img src="/assets/img/contenido/ps4fat.jpg" class="img-fluid" alt="ps4 fat">
                     </div>
                 </div>
                 <div class="d-flex justify-content-center">
-                    <img src="/assets/img/contenido/ps4comparison.JPG" alt="comparacion"> 
+                    <img src="/assets/img/contenido/ps4comparison.JPG" class="compare_ps4" alt="comparacion"> 
                 </div>
                 
         </div>

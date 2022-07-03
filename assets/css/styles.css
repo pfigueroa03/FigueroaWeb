@@ -94,4 +94,8 @@
     .compare_ps4{
         display: none;
     }
+
+    .play_5_video {
+        height: 23rem;
+    }
 }

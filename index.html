@@ -3,42 +3,70 @@
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <link rel="stylesheet" href="../assets/css/styles.css">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="../assets/img/main.png">
+    <link rel="stylesheet" href="../assets/css/bootstrap.min.css">
+    <script src="../assets/js/jquery.slim.min.js"></script>
+    <script src="../assets/js/bootstrap.bundle.min.js"></script>
+    <link rel="stylesheet" href="./assets/css/main.css">
     <title>Document</title>
 </head>
 <body>
     <div id="grid">
         <div id="nav" class="border">
             <header>
-                <nav class="navigtion">
-                    <section class="navBar border" id="nav">
-                        <div class="mainImg">
-                            <a href="index.html"><img src="../assets/img/logo.jpg" alt="Main menu"></a>
+                <div class="container-fluid bg-dark">
+                    <div class="row">
+                        <div class="col-1">
+                            
                         </div>
-                        <nav class="mainNav">
-                            <ul>
-                                <li><a href="index.html">Pagina principal</a></li>
-                                <li><a href="../pages/games.html">Juegos</a></li>
-                                <div class="dropdown">
-                                    <button class="drop-father"><a href="../pages/sony.html">Sony</a></button>
-                                    <div class="dropdown-content">
-                                        <a href="../pages/sony.html#novedades_play">Novedades</a>
-                                        <a href="../pages/sony.html#consolas_play">Consolas</a>
-                                    </div>
+                        <div class="col-11 desktop_nav">
+                            <ul class="nav nav-pills d-flex justify-content-end">
+                                <li class="nav-item">
+                                <a class="nav-link" href="./index.html">Pagina Principal</a>
+                                </li>
+                                <li class="nav-item dropdown">
+                                <a class="nav-link dropdown-toggle" data-toggle="dropdown" href="./pages/sony.html" role="button" aria-haspopup="true" aria-expanded="false">Sony</a>
+                                <div class="dropdown-menu">
+                                    <a class="dropdown-item" href="./pages/sony.html">Principal</a>
+                                    <a class="dropdown-item" href="./pages/sony.html#novedades_play">Novedades</a>
+                                    <a class="dropdown-item" href="./pages/sony.html#consolas_play">Consolas</a>
                                 </div>
-                                <div class="dropdown">
-                                    <button class="drop-father"><a href="../pages/microsoft.html">Microsoft</a></button>
-                                    <div class="dropdown-content">
-                                        <a href="../pages/microsoft.html#novedades_xbox">Novedades</a>
-                                        <a href="../pages/microsoft.html#consolas_xbox">Consolas</a>
+                                </li>
+                                <li class="nav-item dropdown">
+                                    <a class="nav-link dropdown-toggle" data-toggle="dropdown" href="./pages/microsoft.html" role="button" aria-haspopup="true" aria-expanded="false">Microsoft</a>
+                                    <div class="dropdown-menu">
+                                        <a class="dropdown-item" href="./pages/microsoft.html">Principal</a>
+                                        <a class="dropdown-item" href="./pages/microsoft.html#novedades_xbox">Novedades</a>
+                                        <a class="dropdown-item" href="./pages/microsoft.html#consolas_xbox">Consolas</a>
                                     </div>
-                                </div>
-                                <li><a href="../pages/contact.html">Contacto</a></li>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" href="./pages/games.html">Juegos</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" href="./pages/contact.html">Contacto</a>
+                                </li>
                             </ul>
-                        </nav>
-                    </section>
-                </nav>
+                        </div>
+                        <div class="col-11 justify-content-end mobile_nav">
+                            <div class="dropdown">
+                                <button class="btn btn-secondary dropdown-toggle"
+                                        type="button" id="dropdownMenu1" data-toggle="dropdown"
+                                        aria-haspopup="true" aria-expanded="false">
+                                  Navegador
+                                </button>
+                                <div class="dropdown-menu" aria-labelledby="dropdownMenu1">
+                                  <a class="dropdown-item" href="./index.html">Principal</a>
+                                  <a class="dropdown-item" href="./pages/sony.html">Sony</a>
+                                  <a class="dropdown-item" href="./pages/microsoft.html">Microsoft</a>
+                                  <a class="dropdown-item" href="./pages/games.html">Juegos</a>
+                                  <a class="dropdown-item" href="./pages/contact.html">Contactos</a>
+                                </div>
+                              </div>
+                        </div>
+                    </div>
+                </div>
             </header>
         </div>
         <div id="bienvenida" class="border">

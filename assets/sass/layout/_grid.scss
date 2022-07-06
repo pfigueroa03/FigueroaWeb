@@ -1,0 +1,46 @@
+#grid {
+    display: grid;
+    grid-template-areas: 
+        "nav nav"
+        "bienvenida bienvenida"
+        "tecnologia tecnologia"
+        "consolas juegos"
+        "informacion informacion"
+        "footer footer";
+    grid-column-gap: 10px;
+    grid-row-gap: 10px;
+    height: 100vh;
+    grid-template-columns: 1fr 1fr;
+
+    &.border {
+        border: 1px solid black
+    }
+}
+
+#nav{
+    grid-area: nav;
+}
+
+#bienvenida {
+    grid-area: bienvenida;
+}
+
+#tecnologia{
+    grid-area: tecnologia;
+}
+
+#consolas {
+    grid-area: consolas;
+}
+
+#juegos {
+    grid-area: juegos;
+}
+
+#addInfo {
+    grid-area: informacion;
+}
+
+#footer{
+    grid-area: footer;
+}

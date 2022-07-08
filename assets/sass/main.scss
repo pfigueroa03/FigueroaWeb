@@ -7,10 +7,8 @@
 
 #bienvenida {
     .welcome {
+        @include fonts-text(italic, 35px, center);
         font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-        font-style: $italic;
-        font-size: 35px;
-        text-align: center;
     }
 }
 
@@ -44,10 +42,8 @@
 
 /* Microsoft page styles*/
 .microsoft_title{
+    @include fonts-text(italic, 65px, center);
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    font-style: $italic;
-    font-size: 65px;
-    text-align: center;
 }
 
 .microIntro {
@@ -88,16 +84,16 @@
 /* Index.html */
 
 .novedadIntro {
-    background-color: black;
+    background-color: $bg-black;
     background-image: url("/assets/img/updated.png");
     background-position: center;
     background-repeat: no-repeat;
     width: 100%;
     height: 500px;
-    position: $relative;
+    position: map-get($positions, relative);
     p {
         color: $color-white;
-        position: $absolute;
+        position: map-get($positions, absolute);
         bottom: 0;
         right: 0;
         font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
@@ -111,7 +107,7 @@
     height: auto;
 
     .console_intro {
-        position: $relative;
+        position: map-get($positions, relative);
         width: 100%;
         height: 100%;
         padding: 5px;
@@ -120,11 +116,11 @@
             width: 100%;
             height: auto;
             opacity: 0.8;
-            position: $relative;
+            position: map-get($positions, relative);
         }
 
         .console--topleft {
-            position: $absolute;
+            position: map-get($positions, absolute);
             top: 8px;
             left: 16px;
             font-size: 18px;
@@ -133,11 +129,11 @@
         .img_games_intro {
             width: 100%;
             height: auto;
-            position: $relative;
+            position: map-get($positions, relative);
         }
 
         .games--botright{
-            position: $absolute;
+            position: map-get($positions, absolute);
             bottom: 8px;
             right: 16px;
             font-size: 16px;
@@ -164,7 +160,7 @@
     font-family: 'Goldman', cursive;
     color: $color-white-smk;
     float: right;
-    position: $relative;
+    position: map-get($positions, relative);
     margin: -3rem 0 2rem 1rem;
     padding: 1rem;
     display: contents;
@@ -206,39 +202,38 @@
 }
 
 .game_title{
-    font-size: xx-large;
+    @include fonts-text(italic, xx-large, center);
     font-family: 'Cherry Swash', cursive;
-    font-style: $italic;
     margin: 5px 0 15px 0;
-    text-align: center;
 }
 
-.games_page {
-    img {
-        border-radius: 30px;
-        padding: 7px;
-        margin: 5 5 0 5;
-        height: 264px;
+.games_image {
+    border-radius: 30px;
+    padding: 7px;
+    margin: 5 5 0 5;
+    height: 264px;
 
-        &:hover{
-            animation-duration: 2s;
-            animation-name: bigsmall;
-            animation-iteration-count: infinite;
-            animation-direction: alternate;
-        }
-
-        &.PlayXbox{
-            background-color: rgb(3, 109, 77);
-        }
-        
-        &.xbox_game{
-            background-color: $bg-green;
-        }
-        
-        &.play_game{
-            background-color: $bg-blue;
-        }
+    &:hover{
+        animation-duration: 2s;
+        animation-name: bigsmall;
+        animation-iteration-count: infinite;
+        animation-direction: alternate;
     }
+}
+
+.PlayXbox{
+    @extend.games_image;
+    background-color: rgb(3, 109, 77);
+}
+
+.xbox_game{
+    @extend.games_image;
+    background-color: $bg-green;
+}
+
+.play_game{
+    @extend.games_image;
+    background-color: $bg-blue;
 }
 
 @keyframes bigsmall {

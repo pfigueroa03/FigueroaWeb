@@ -5,11 +5,23 @@ $main-bg-color: #333;
 $bg-color-hover: #111;
 $bg-green: green;
 $bg-blue: blue;
+$bg-black: black;
 
-/* Font styles */
+/* Font styles-size-position */
+@mixin fonts-text ($font-style, $font-size, $text-align) {
+    font-style:$font-style;
+    font-size:$font-size;
+    text-align:$text-align;
+}
+
 $italic: italic;
 
 /* Positions */
-$left: left;
-$relative: relative;
-$absolute: absolute;
+$positions: (
+    left: left,
+    relative: relative,
+    absolute: absolute,
+);
+
+
+    

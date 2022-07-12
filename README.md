@@ -10,3 +10,4 @@ Version 12/07/2022 - SASS II + SEO
 - Added meta:keywoards on index, games, sony and microsoft html
 - Fix a minor order about the use of H-tags headers.
 - Fix size on main image to improve a little bit the SEO performance.
+- Added robots.txt file

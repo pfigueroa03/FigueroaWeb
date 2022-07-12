@@ -1,5 +1,5 @@
 # FigueroaWeb
-Readme con versionado.
+Readme to handle version information.
 
 Version 12/07/2022 - SASS II + SEO
 - Added mixin for font-styles on _variables.scss
@@ -9,3 +9,4 @@ Version 12/07/2022 - SASS II + SEO
 - Added meta:description on index.html
 - Added meta:keywoards on index, games, sony and microsoft html
 - Fix a minor order about the use of H-tags headers.
+- Fix size on main image to improve a little bit the SEO performance.

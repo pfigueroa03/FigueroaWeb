@@ -44,3 +44,17 @@
 #footer{
     grid-area: footer;
 }
+
+@media screen and (max-width: 768px){
+    #grid {
+        grid-template-areas: 
+            "nav nav"
+            "bienvenida bienvenida"
+            "tecnologia tecnologia"
+            "consolas consolas"
+            "juegos juegos"
+            "informacion informacion"
+            "footer footer";
+        grid-template-columns: 1fr 1fr;
+    }
+}

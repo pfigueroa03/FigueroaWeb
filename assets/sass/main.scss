@@ -64,20 +64,9 @@
         }
     }
     .video_intro {
-        .mainVideo {
-            width: auto;
-            height: 350px;
+        &.mainVideo {
+            width: 100%;
         }
-    }
-}
-
-.xboxMedia {
-    display: flex;
-    flex-wrap: nowrap;
-    justify-content: space-around;
-    video {
-        width: auto;
-        height: 375px;
     }
 }
 

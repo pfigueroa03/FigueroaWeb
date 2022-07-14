@@ -85,3 +85,22 @@
         position: map-get($positions, absolute);
     }
 }
+
+@media screen and (max-width: 768px){
+    .mainImg {
+        display: none;
+    }
+
+    .mainNav-nb {
+        font-size: small;
+    }
+
+    .dropdown-nb {
+        float: map-get($positions, left);
+        overflow: hidden;
+    
+        .drop-father-nb {
+            font-size: small;
+        }
+    }
+}

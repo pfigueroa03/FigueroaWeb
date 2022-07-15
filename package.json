@@ -1,8 +1,8 @@
 {
-  "author": "Nombre e Email",
-  "description": "Descripcion de mi Package",
+  "author": "Pablo Figueroa. pablofigue03@gmail.com",
+  "description": "Uso de node-sass y nodemon para compilar SCSS files.",
   "license": "MIT",
-  "name": "nombre-de-mi-package",
+  "name": "coder-web",
   "scripts": {
     "watch:css": "nodemon -e scss -x \"npm run build:css\"",
     "build:css": "node-sass --output-style compressed assets/sass/main.scss assets/css/main.css"

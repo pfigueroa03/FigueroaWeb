@@ -5,6 +5,7 @@ Version 14/07/2022 - Tercera Entrega
 - Added responsivness to all HTML files
 - Added some mediaQuerys to contact.html and index.html
 - Added bootstrap function to microsoft.html
+- Hosted webserver on 000webhhosting (https://pfigueweb.000webhostapp.com/index.html)
 
 Version 12/07/2022 - SASS II + SEO
 - Added mixin for font-styles on _variables.scss

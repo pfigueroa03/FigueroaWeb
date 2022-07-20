@@ -17,25 +17,26 @@
 </head>
 <body>
     <div id="grid">
-        <div id="nav" class="border">
+        <div id="nav">
             <header>
                 <div class="container-fluid bg-dark">
                     <div class="row">
-                        <div class="col-1">
-                            
+                        <div class="col-1 mainImg">
+                            <a href="/index.html"><img src="/assets/img/logo.jpg" alt="Main menu"></a>
                         </div>
+                        <!--Navegador para vista en desktop-->
                         <div class="col-11 desktop_nav">
                             <ul class="nav nav-pills d-flex justify-content-end">
                                 <li class="nav-item">
-                                <a class="nav-link" href="./index.html">Pagina Principal</a>
+                                    <a class="nav-link" href="./index.html">Pagina Principal</a>
                                 </li>
                                 <li class="nav-item dropdown">
-                                <a class="nav-link dropdown-toggle" data-toggle="dropdown" href="./pages/sony.html" role="button" aria-haspopup="true" aria-expanded="false">Sony</a>
-                                <div class="dropdown-menu">
-                                    <a class="dropdown-item" href="./pages/sony.html">Principal</a>
-                                    <a class="dropdown-item" href="./pages/sony.html#novedades_play">Novedades</a>
-                                    <a class="dropdown-item" href="./pages/sony.html#consolas_play">Consolas</a>
-                                </div>
+                                    <a class="nav-link dropdown-toggle" data-toggle="dropdown" href="./pages/sony.html" role="button" aria-haspopup="true" aria-expanded="false">Sony</a>
+                                    <div class="dropdown-menu">
+                                        <a class="dropdown-item" href="./pages/sony.html">Principal</a>
+                                        <a class="dropdown-item" href="./pages/sony.html#novedades_play">Novedades</a>
+                                        <a class="dropdown-item" href="./pages/sony.html#consolas_play">Consolas</a>
+                                    </div>
                                 </li>
                                 <li class="nav-item dropdown">
                                     <a class="nav-link dropdown-toggle" data-toggle="dropdown" href="./pages/microsoft.html" role="button" aria-haspopup="true" aria-expanded="false">Microsoft</a>
@@ -53,6 +54,7 @@
                                 </li>
                             </ul>
                         </div>
+                        <!--Navegador para vista en mobile-->
                         <div class="col-11 justify-content-end mobile_nav">
                             <div class="dropdown">
                                 <button class="btn btn-secondary dropdown-toggle"
@@ -73,17 +75,17 @@
                 </div>
             </header>
         </div>
-        <div id="bienvenida" class="border">
+        <div id="bienvenida">
             <h1 class="welcome">Bienvenido</h1>
         </div>
         <div id="tecnologia">
-            <section class="novedadIntro border">
+            <section class="novedadIntro">
                 <p> 
                     Informate de todos los avances tecnologicos de la industria
                 </p>
             </section>
         </div>
-        <div id="consolas" class="border">
+        <div id="consolas">
             <section class="playXbox">
                 <section class="console_intro">
                     <img src="./assets/img/playxbox.jpg" alt="Nueva Generacion" class="img_console_intro">
@@ -91,7 +93,7 @@
                 </section>
             </section>
         </div>
-        <div id="juegos" class="border">
+        <div id="juegos">
             <section class="playXbox">
                 <section class="console_intro">
                     <img src="./assets/img/resize-game-prot.png" alt="Games Intro" class="img_games_intro">
@@ -100,7 +102,7 @@
             </section>
         </div>
             
-        <div id="addInfo" class="border">
+        <div id="addInfo">
             <section class="infoTable">
                 <h4>Cuadro informativo relacionado a las consolas de cada empresa</h4>
                 <table border="1">
@@ -141,7 +143,7 @@
                 </table>
             </section>
         </div>
-        <div id="footer" class="border">
+        <div id="footer">
             <footer>
                 <hr>
                 <p>Encontranos en:</p>
@@ -150,6 +152,6 @@
                 <div class="copy"> &copy; 2022 Pablo</div>
             </footer>
         </div>
-</div>
+    </div>
 </body>
 </html>

@@ -1,6 +1,12 @@
 # FigueroaWeb
 Readme to handle version information.
 
+Version 20/07/2022 - Fix various
+- Added image to main nav on all pages
+- Removed border class and border css
+- Fix navbar size
+- Fix mainImg size
+
 Version 14/07/2022 - Tercera Entrega
 - Added responsivness to all HTML files
 - Added some mediaQuerys to contact.html and index.html

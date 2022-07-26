@@ -70,6 +70,27 @@
     }
 }
 
+#novedades_xbox {
+    h2 {
+        @include fonts-text(italic, 32px ,center)
+    }
+}
+
+.microsoft_windows {
+    background-image: url("/assets/img/contenido/windows11_bg.jpg");
+    background-position: center center;
+    background-repeat: no-repeat;
+    h5, p {
+        color: $color-white;
+    }
+    p {
+        font-size: large;
+    }
+    h5 {
+        font-weight: bolder;
+    }
+}
+    
 /* Index.html */
 
 .novedadIntro {
@@ -163,28 +184,6 @@
     width: inherit;
 }
 
-@media screen and (max-width: 768px){
-    .card{
-        font-size:15px;
-    }
-    .card h5{
-        font-size:15px;
-    }
-    .desktop_nav{
-        display:none;
-    }
-    .mobile_nav{
-        display:flex;
-    }
-    .compare_ps4{
-        display: none;
-    }
-
-    .play_5_video {
-        height: 20rem;
-    }
-}
-
 /* games.html */
 #linear-grad{
     background-image: linear-gradient(#333, rgb(151, 50, 50));
@@ -232,4 +231,39 @@
     to {
         transform: scale(1.1, 1.1);
     }
+}
+
+@media screen and (max-width: 768px){
+    .card{
+        font-size:15px;
+    }
+    .card h5{
+        font-size:15px;
+    }
+    .desktop_nav{
+        display:none;
+    }
+    .mobile_nav{
+        display:flex;
+    }
+    .compare_ps4{
+        display: none;
+    }
+
+    .play_5_video {
+        height: 20rem;
+    }
+
+    .microsoft_windows {
+        background-image: none;
+        background-color: blue;
+        h5, p {
+            color: $color-white;
+        }
+    
+        p {
+            font-size: large;
+        }
+    }
+
 }

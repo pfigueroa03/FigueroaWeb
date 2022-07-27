@@ -46,7 +46,7 @@
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
 
-.microIntro {
+.micro_intro {
     display: flex;
     background-color: $bg-green;
     .text_intro{
@@ -64,7 +64,7 @@
         }
     }
     .video_intro {
-        &.mainVideo {
+        &.main_video {
             width: 100%;
         }
     }
@@ -181,7 +181,7 @@
     display:none
 }
 
-.mainVideo{
+.main_video{
     width: inherit;
 }
 

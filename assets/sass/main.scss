@@ -80,6 +80,7 @@
     background-image: url("/assets/img/contenido/windows11_bg.jpg");
     background-position: center center;
     background-repeat: no-repeat;
+    opacity: 0.90;
     h5, p {
         color: $color-white;
     }
@@ -93,7 +94,7 @@
     
 /* Index.html */
 
-.novedadIntro {
+.novedad_intro {
     background-color: $bg-black;
     background-image: url("/assets/img/updated.png");
     background-position: center;
@@ -111,7 +112,7 @@
     }
 }
 
-.playXbox {
+.play_xbox {
     display: inline-flex;
     width: 100%;
     height: auto;
@@ -209,7 +210,7 @@
     }
 }
 
-.PlayXbox{
+.play_xbox_game{
     @extend.games_image;
     background-color: rgb(3, 109, 77);
 }

@@ -212,17 +212,17 @@
 
 .play_xbox_game{
     @extend.games_image;
-    background-color: rgb(3, 109, 77);
+    box-shadow: 10px 5px 10px rgb(3, 109, 77);
 }
 
 .xbox_game{
     @extend.games_image;
-    background-color: $bg-green;
+    box-shadow: 10px 5px 10px $bg-green;
 }
 
 .play_game{
     @extend.games_image;
-    background-color: $bg-blue;
+    box-shadow: 10px 5px 10px $bg-blue;
 }
 
 @keyframes bigsmall {
